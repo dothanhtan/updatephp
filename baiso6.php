@@ -8,12 +8,12 @@ include_once("header.php")
 <?php include_once("nav.php") ?>
 <?php
 //Mã php bài số 6
-echo "<h1>Bài số 6</h1>";
+echo "<h3>Bài số 6</h3>";
 
 ?>
 
 <div id="contentAjax">
-    <button onclick="TestAjax();" type="button">Check</button>
+    <button onclick="TestAjax();" type="button" class="btn btn-outline-info">Check</button>
 </div>
 <?php include_once("footer.php") ?> 
 <script>
@@ -45,7 +45,7 @@ echo "<h1>Bài số 6</h1>";
                 document.getElementById("contentAjax").innerHTML = this.responseText;*/
                 var book = JSON.parse(this.responseText);
 				console.log(book);
-				var str = '<table class="table">' +
+				var str = '<table class="table table-hover">' +
 							'<thead class="thead-dark">' +
 								'<tr>'+
 									'<th scope="col">STT</th>'+
@@ -66,7 +66,7 @@ echo "<h1>Bài số 6</h1>";
 								'<td>' + book[i].author + '</td>' + 
 								'<td>' + book[i].year + '</td>' + 
 								'<td class="d-flex">'+
-									'<button class="btn btn-outline-info mr-3" data-toggle="modal" data-target="#editItem'+ i + '"><i class="far fa-edit"></i> Sửa</button>'+
+									'<button class="btn btn-outline-info mr-3" data-toggle="modal" data-target="#editItem'+ i + '"><i class="fas fa-edit"></i> Sửa</button>'+
 									'<button class="btn btn-outline-danger" name="delete" data-toggle="modal" data-target="#deleteItem'+ i + '"><i class="fas fa-trash-alt"></i> Xóa</button>'+
 					       		'</td>'+
 						  '</tr>';

@@ -38,7 +38,8 @@ class Book {
 
         if($con->connect_error)
             die("Ket noi that bai. Chi tiet ". $con->connect_error);
-        return $con;
+        return 
+            $con;
     }
     static function getListFromDB(){
         //Buoc 1 Tao ket noi
@@ -139,7 +140,8 @@ class Book {
         $result = $conn->query($sql);
         if($result == true)
             echo 'Tạo thành công';
-        else echo 'Tạo thất bại';
+        else 
+            echo 'Tạo thất bại';
         //B3: Giải phóng kết nối
         $conn->close();
        
@@ -150,7 +152,8 @@ class Book {
         $result = $conn->query($sql);
         if($result == true)
             echo 'Sửa thành công';
-        else echo 'Sửa thất bại';
+        else 
+            echo 'Sửa thất bại';
         //B3: Giải phóng kết nối
         $conn->close(); 
     }

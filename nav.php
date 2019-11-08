@@ -99,6 +99,11 @@
                 <i class="fas fa-fw fa-chart-area"></i>
                 <span>Bài số 6</span></a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contact.php">
+                <i class="fas fa-fw fa-chart-area"></i>
+                <span>Contact</span></a>
+        </li>
     </ul>
     <div id="content-wrapper">
         <div class="container-fluid">

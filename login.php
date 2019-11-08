@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body class="bg-dark">
     <div class="container">
         <div class="card card-login mx-auto mt-5">
-            <div class="card-header">Login</div>
+            <div class="card-header text-center mt-3"><strong>LOGIN</strong></div>
             <div class="card-body">
                 <form method="post">
                     <div class="form-group">
@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <div class="checkbox">
                             <label>
                                 <input type="checkbox" value="remember-me">
-                                Remember Password
+                                Remember me
                             </label>
                         </div>
                     </div>
@@ -71,11 +71,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         ?>
                     </div>
                     <?php } ?>
+                    
                 </form>
-                <div class="text-center">
-                    <a class="d-block small mt-3" href="register.html">Register an Account</a>
-                    <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
-                </div>
+                <p class="text-center text-info">--------------------Sign in with--------------------</p>
+                <button class="btn btn-outline-info btn-facebook" type="submit"><i class="fab fa-facebook-f mr-2"></i> Facebook</button>
+                <button class="btn btn-outline-danger btn-google float-right" type="submit"><i class="fab fa-google mr-2"></i> Google</button>
+            
             </div>
         </div>
     </div>

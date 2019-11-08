@@ -304,6 +304,4 @@ $lsFromDB = Book::getListFromDB();
     </div>
 </div>
 <!--End Add-->
-
-
 <?php include_once("footer.php") ?>
